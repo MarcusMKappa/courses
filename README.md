@@ -24,4 +24,9 @@ The course is divided into two parts. The first focuses on statistical data visu
 &nbsp;
 &nbsp;
 
+### SQL Bootcamp - SQLite Databases - Part I
+#### Course Description
+Relational Database Management Systems (RDBMS). SQLite, SQLite + command line. Installation and configuration of DB Browser for SQLite and SQLiteStudio. DQL - Data Query Language. Creating and executing database queries. Sorting data. Filtering the data. Grouping data. CASE SELECT statements. Creating Subqueries. Joining Tables - CROSS JOIN, LEFT JOIN, INNER JOIN, SELF JOIN. Joining tables - UNION, UNION ALL, EXCEPT, INTERSECT (https://www.udemy.com/course/sql-bootcamp-bazy-danych-sqlite/)
 
+&nbsp;
+&nbsp;
