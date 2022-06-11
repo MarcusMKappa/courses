@@ -634,8 +634,65 @@ WHERE
 	CompanyName GLOB '[^A-D]*';
 	
 	
+	
+	
+/* Grupowanie danych - GROUP BY */
+	
+SELECT 
+	COUNT(*)
+FROM 
+	Product;
+
+
+SELECT 
+	COUNT(1)
+FROM 
+	Product;
+	
+	
+SELECT 
+	COUNT(1) AS TotalRows
+FROM 
+	Product;
+
+
+SELECT 
+	COUNT(DISTINCT SupplierId) AS NumOfSuppliers
+FROM 
+	Product;
+	
+	
+SELECT 
+	COUNT(Fax)
+FROM 
+	Customer;
+	
+	
+SELECT 
+	SUM(UnitPrice) AS TotalSum
+FROM 
+	Product;
+	
+	
+SELECT 
+	AVG(UnitPrice) AS AvgPrice
+FROM 
+	Product;
+	
+	
+SELECT 
+	MIN(UnitPrice) AS MinPrice
+FROM 
+	Product;
+	
+	
+SELECT 
+	MAX(UnitPrice) AS MaxPrice
+FROM 
+	Product;
 
 	
+
 /* Instrukcja SELECT CASE */
 
 
