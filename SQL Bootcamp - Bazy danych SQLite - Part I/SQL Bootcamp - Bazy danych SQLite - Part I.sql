@@ -1,5 +1,8 @@
 /* SQL Bootcamp - Bazy danych SQLite - Part I */
 
+
+
+
 /* Instrukcja SELECT */
 
 SELECT 20;
@@ -34,6 +37,8 @@ SELECT (45.0 / 42.0) - 1 AS daily_return;
 
 SELECT (45.0 / 42.0) - 1 AS daily_return,
 		'GPW' AS stock_market;
+
+
 
 
 /* Instrukcja SELECT ... FROM ... */
