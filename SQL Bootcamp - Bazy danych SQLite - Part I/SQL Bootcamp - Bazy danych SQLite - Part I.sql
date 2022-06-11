@@ -43,7 +43,9 @@ SELECT (45.0 / 42.0) - 1 AS daily_return,
 
 /* Instrukcja SELECT ... FROM ... */
 
-SELECT * FROM Category;
+SELECT * 
+FROM 
+	Category;
 
 
 SELECT 
@@ -68,7 +70,9 @@ FROM
 	Category;
 	
 
-SELECT * FROM Employee;
+SELECT * 
+FROM 
+	Employee;
 
 
 SELECT 
@@ -84,24 +88,21 @@ FROM
 
 /* Instrukcja ORDER BY */
 
-SELECT 
-	* 
+SELECT * 
 FROM 
 	Employee
 ORDER BY 
 	FirstName;
 
 	
-SELECT 
-	* 
+SELECT * 
 FROM 
 	Employee
 ORDER BY 
 	FirstName DESC;
 
 
-SELECT 
-	* 
+SELECT * 
 FROM 
 	Employee
 ORDER BY 
@@ -109,8 +110,7 @@ ORDER BY
 	FirstName;
 
 	
-SELECT 
-	* 
+SELECT * 
 FROM 
 	Employee
 ORDER BY 
@@ -129,24 +129,21 @@ ORDER BY
 	2 DESC;
 
 
-SELECT 
-	* 
+SELECT * 
 FROM 
 	Product
 ORDER BY 
 	UnitPrice;
 	
 
-SELECT 
-	* 
+SELECT * 
 FROM 
 	Product
 ORDER BY 
 	UnitPrice DESC;
 	
 	
-SELECT 
-	* 
+SELECT * 
 FROM 
 	Customer
 ORDER BY 
@@ -244,8 +241,7 @@ FROM
 	Product
 ORDER BY 
 	UnitPrice
-LIMIT 5
-OFFSET 3;
+LIMIT 5 OFFSET 3;
 	
 	
 SELECT 
@@ -255,8 +251,7 @@ FROM
 	Product
 ORDER BY 
 	UnitPrice DESC
-LIMIT 1
-OFFSET 4;
+LIMIT 1 OFFSET 4;
 
 
 
@@ -297,8 +292,350 @@ ORDER BY
 	
 /* Instrukcja WHERE */
 
+SELECT *
+FROM 
+	Customer
+WHERE
+	Country == 'Poland';
 
 
+SELECT *
+FROM 
+	Customer
+WHERE
+	Country == 'Poland';
+	
+	
+SELECT *
+FROM 
+	Customer
+WHERE
+	Country == 'USA';
+
+	
+SELECT *
+FROM 
+	Customer
+WHERE
+	Region == 'Scandinavia';
+
+
+SELECT 
+	ProductName, 
+	UnitPrice
+FROM 
+	Product
+WHERE
+	UnitPrice > 40;
+
+	
+SELECT 
+	ProductName, 
+	UnitPrice
+FROM 
+	Product
+WHERE
+	UnitPrice > 40
+ORDER BY
+	UnitPrice;
+
+	
+SELECT 
+	ProductName, 
+	UnitPrice,
+	UnitsInStock
+FROM 
+	Product
+WHERE
+	UnitsInStock = 0;
+
+	
+SELECT 
+	ProductName, 
+	UnitPrice
+FROM 
+	Product
+WHERE
+	UnitsInStock = 0;
+	
+	
+SELECT 
+	ProductName, 
+	UnitPrice
+FROM 
+	Product
+WHERE
+	UnitsInStock != 0;
+
+	
+SELECT 
+	ProductName, 
+	UnitPrice
+FROM 
+	Product
+WHERE
+	UnitsInStock <> 0;
+	
+
+SELECT *
+FROM 
+	Customer
+WHERE
+	Country == 'UK' AND City =='London';
+	
+	
+SELECT *
+FROM 
+	Customer
+WHERE
+	Country == 'UK' OR Country =='Italy';
+	
+	
+SELECT *
+FROM 
+	Customer
+WHERE
+	Country == 'UK' OR Country =='Italy' OR Country == 'Poland';
+	
+
+SELECT *
+FROM 
+	Customer
+WHERE
+	Country IN ('UK', 'Italy', 'Poland');
+
+	
+SELECT *
+FROM 
+	Customer
+WHERE
+	Country NOT IN ('UK', 'Italy', 'Poland');
+	
+	
+SELECT *
+FROM 
+	Customer
+WHERE
+	Country NOT IN ('UK', 'Italy', 'Poland');
+	
+	
+SELECT
+	ProductName, 
+	UnitPrice
+FROM 
+	Product
+WHERE
+	UnitPrice >= 15 AND UnitPrice <=20;
+	
+	
+SELECT
+	ProductName, 
+	UnitPrice
+FROM 
+	Product
+WHERE
+	UnitPrice BETWEEN 15 AND 20;
+	
+
+SELECT
+	ProductName, 
+	UnitPrice
+FROM 
+	Product
+WHERE
+	UnitPrice NOT BETWEEN 15 AND 20;
+	
+	
+SELECT
+	CompanyName, 
+	Fax
+FROM 
+	Customer
+WHERE
+	Fax IS NULL;	
+	
+	
+SELECT
+	CompanyName, 
+	Fax
+FROM 
+	Customer
+WHERE
+	Fax IS NOT NULL;	
+	
+	
+SELECT
+	CompanyName, 
+	ContactName,
+	Country
+FROM 
+	Customer
+WHERE
+	CompanyName == 'Bon app';	
+
+	
+SELECT
+	CompanyName, 
+	ContactName,
+	Country
+FROM 
+	Customer
+WHERE
+	CompanyName == 'bon app';	
+	
+	
+SELECT
+	CompanyName, 
+	ContactName,
+	Country
+FROM 
+	Customer
+WHERE
+	CompanyName LIKE  'B%';	
+	
+	
+SELECT
+	CompanyName, 
+	ContactName,
+	Country
+FROM 
+	Customer
+WHERE
+	CompanyName LIKE  'b%';	
+	
+	
+SELECT
+	CompanyName, 
+	ContactName,
+	Country
+FROM 
+	Customer
+WHERE
+	CompanyName LIKE  'Bl%';
+	
+	
+SELECT
+	CompanyName, 
+	ContactName,
+	Country
+FROM 
+	Customer
+WHERE
+	CompanyName LIKE  '%en';	
+	
+	
+SELECT
+	CompanyName, 
+	ContactName,
+	Country
+FROM 
+	Customer
+WHERE
+	CompanyName NOT LIKE  '%en';	
+	
+	
+SELECT
+	CompanyName, 
+	ContactName,
+	Country
+FROM 
+	Customer
+WHERE
+	CompanyName LIKE  '%en' OR CompanyName LIKE '%es';	
+	
+	
+SELECT
+	CompanyName, 
+	ContactName,
+	Country
+FROM 
+	Customer
+WHERE
+	CompanyName LIKE  '%co%';
+	
+	
+SELECT
+	CompanyName, 
+	ContactName,
+	Country
+FROM 
+	Customer
+WHERE
+	Country LIKE  '___';
+	
+	
+SELECT
+	CompanyName, 
+	ContactName,
+	Country
+FROM 
+	Customer
+WHERE
+	Country LIKE  '__';
+	
+	
+SELECT
+	CompanyName, 
+	ContactName,
+	Country
+FROM 
+	Customer
+WHERE
+	ContactName LIKE  'J__n%';
+
+
+SELECT
+	CompanyName, 
+	ContactName,
+	Country
+FROM 
+	Customer
+WHERE
+	ContactName GLOB  'An*';
+
+
+SELECT
+	CompanyName, 
+	ContactName,
+	Country
+FROM 
+	Customer
+WHERE
+	ContactName GLOB 'an*';	
+
+	
+SELECT
+	CompanyName, 
+	ContactName,
+	Country
+FROM 
+	Customer
+WHERE
+	ContactName GLOB 'An? *';
+	
+
+SELECT
+	CompanyName, 
+	ContactName,
+	Country
+FROM 
+	Customer
+WHERE
+	CompanyName GLOB '[A-D]*';
+	
+	
+SELECT
+	CompanyName, 
+	ContactName,
+	Country
+FROM 
+	Customer
+WHERE
+	CompanyName GLOB '[^A-D]*';
+	
+	
+
+	
 /* Instrukcja SELECT CASE */
 
 
