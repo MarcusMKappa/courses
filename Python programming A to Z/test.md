@@ -1,7 +1,7 @@
->######SELECT<br>
->######    Title, FirstName,<br>
->    LastName<br>
->FROM<br>
+######SELECT<br>
+######    Title, FirstName,<br>
+    LastName<br>
+FROM<br>
 >    Employee<br>
 >Order by<br>
 >    FirstName ASC,<br>
