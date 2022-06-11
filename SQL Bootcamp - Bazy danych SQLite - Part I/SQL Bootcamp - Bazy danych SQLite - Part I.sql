@@ -33,11 +33,46 @@ SELECT (45.0 / 42.0) - 1;
 SELECT (45.0 / 42.0) - 1 AS daily_return;
 
 SELECT (45.0 / 42.0) - 1 AS daily_return,
-		'GPW' AS stock_market
+		'GPW' AS stock_market;
 
 
 /* Instrukcja SELECT ... FROM ... */
 
+SELECT * FROM Category;
+
+
+SELECT 
+	Id, 
+	CategoryName, 
+	Description 
+FROM 
+	Category;
+
+
+SELECT 
+	CategoryName, 
+	Description 
+FROM 
+	Category;
+
+
+SELECT 
+	CategoryName AS Category, 
+	Description 
+FROM 
+	Category;
+	
+
+SELECT * FROM Employee;
+
+
+SELECT 
+	FirstName, 
+	LastName, 
+	City, 
+	Title 
+FROM 
+	Employee;
 
 
 /* Instrukcja SELECT ... FROM ... */
