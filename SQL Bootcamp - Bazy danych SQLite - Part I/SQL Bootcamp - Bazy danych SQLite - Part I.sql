@@ -197,11 +197,106 @@ ORDER BY
 
 /* Instrukcja LIMIT + OFFSET */
 
+SELECT 
+	ProductName,
+	UnitPrice
+FROM 
+	Product
+ORDER BY 
+	UnitPrice
+LIMIT 10;
+	
+	
+SELECT 
+	ProductName,
+	UnitPrice
+FROM 
+	Product
+ORDER BY 
+	UnitPrice DESC
+LIMIT 10;
+	
 
+SELECT 
+	ProductName,
+	UnitPrice
+FROM 
+	Product
+ORDER BY 
+	UnitPrice
+LIMIT 1;
+
+
+SELECT 
+	ProductName,
+	UnitPrice
+FROM 
+	Product
+ORDER BY 
+	UnitPrice
+LIMIT 1;
+	
+
+SELECT 
+	ProductName,
+	UnitPrice
+FROM 
+	Product
+ORDER BY 
+	UnitPrice
+LIMIT 5
+OFFSET 3;
+	
+	
+SELECT 
+	ProductName,
+	UnitPrice
+FROM 
+	Product
+ORDER BY 
+	UnitPrice DESC
+LIMIT 1
+OFFSET 4;
+
+
+
+	
 /* Instrukcja SELECT DISTINCT */
 
+SELECT DISTINCT
+	Country
+FROM 
+	Customer;
 
+
+SELECT DISTINCT
+	Country
+FROM 
+	Customer
+ORDER BY 
+	Country;
+
+
+SELECT DISTINCT
+	Country,
+	City
+FROM 
+	Customer;
+
+	
+SELECT DISTINCT
+	Country,
+	City
+FROM 
+	Customer
+ORDER BY 
+	1, 2;
+
+
+
+	
 /* Instrukcja WHERE */
+
 
 
 /* Instrukcja SELECT CASE */
