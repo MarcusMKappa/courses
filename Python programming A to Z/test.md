@@ -1,4 +1,4 @@
-SELECT 
+SELECT
 	Title, 
 	FirstName, 
 	LastName 
