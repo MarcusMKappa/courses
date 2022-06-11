@@ -30,3 +30,11 @@ Relational Database Management Systems (RDBMS). SQLite, SQLite + command line. I
 
 &nbsp;
 &nbsp;
+
+### Python Pandas
+#### Course Description
+This tutorial has been prepared for those who seek to learn the basics and various functions of Pandas. It will be specifically useful for people working with data cleansing and analysis. After completing this tutorial, you will find yourself at a moderate level of expertise from where you can take yourself to higher levels of expertise. (https://www.tutorialspoint.com/python_pandas/index.htm))
+
+&nbsp;
+&nbsp;
+
