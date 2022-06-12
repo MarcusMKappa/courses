@@ -1,4 +1,7 @@
 # Exercises and case studies
 
-
 ![UC-afaa8ff3-ba2e-41fa-b32d-02288ff79a25](https://user-images.githubusercontent.com/106902757/173231733-85840fd6-9e70-4788-8722-be498a110b38.jpg)
+
+
+## BarChart
+<div class='tableauPlaceholder' id='viz1654585781692' style='position: relative'><noscript><a href='#'><img alt='Annual Bonus Analysis ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ta&#47;TableauTrainingSection-2&#47;AnnualBonusAnalysis&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='TableauTrainingSection-2&#47;AnnualBonusAnalysis' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ta&#47;TableauTrainingSection-2&#47;AnnualBonusAnalysis&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /></object></div>
