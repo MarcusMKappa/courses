@@ -636,7 +636,7 @@ WHERE
 	
 	
 	
-/* Grupowanie danych - GROUP BY */
+/* Wbudowane funkcje */
 	
 SELECT 
 	COUNT(*)
@@ -692,6 +692,134 @@ FROM
 	Product;
 
 	
+SELECT 
+	UPPER(CategoryName) AS CategoryName, 
+	Description
+FROM 
+	Category;
+
+
+SELECT 
+	UPPER(CategoryName) AS CategoryName, 
+	Description
+FROM 
+	Category;
+
+	
+SELECT 
+	CategoryName,
+	LENGTH(CategoryName) AS LenCategoryName, 
+	Description
+FROM 
+	Category;
+	
+
+SELECT TYPEOF(3);
+
+SELECT TYPEOF(3.5);
+
+SELECT TYPEOF('PYTHON');
+
+SELECT TYPEOF(null);
+
+SELECT 
+	CategoryName,
+	TYPEOF(CategoryName) AS TypeCategoryName, 
+	Description
+FROM 
+	Category;
+	
+
+
+	
+/* Grupowanie danych - GROUP BY */	
+
+CREATE TABLE website.sales_012021 
+(
+	id				INTEGER PRIMARY KEY,
+	employee_id 	INTEGER NOT NULL,
+	amount 			REAL NOT NULL
+);	
+
+
+INSERT INTO website.sales_012021 (employee_id, amount)
+VALUES
+(325, 109.0),
+(335, 9.89),
+(336, 40.0),
+(325, 210.0),
+(336, 39.50),
+(431, 15.99),
+(325, 10.99),
+(431, 32.00);
+
+
+SELECT *
+FROM 
+	website.sales_012021;
+
+	
+SELECT 
+	employee_id
+FROM 
+	website.sales_012021
+GROUP BY 
+	employee_id;
+	
+	
+SELECT 
+	employee_id, 
+	SUM(amount) AS total_sales
+FROM 
+	website.sales_012021
+GROUP BY 
+	employee_id;
+
+
+SELECT 
+	employee_id, 
+	SUM(amount) AS total_sales,
+	COUNT(employee_id) AS transactions,
+	AVG(amount) AS avg_amount
+FROM 
+	website.sales_012021
+GROUP BY 
+	employee_id;
+
+
+SELECT 
+	employee_id, 
+	SUM(amount) AS total_sales,
+	COUNT(employee_id) AS transactions,
+	AVG(amount) AS avg_amount,
+	MIN(amount) AS min_amount,
+	Max(amount) AS max_amount
+FROM 
+	website.sales_012021
+GROUP BY 
+	employee_id;
+
+
+SELECT 
+	employee_id, 
+	SUM(amount) AS total_sales,
+	COUNT(employee_id) AS transactions,
+	AVG(amount) AS avg_amount,
+	MIN(amount) AS min_amount,
+	Max(amount) AS max_amount
+FROM 
+	website.sales_012021
+GROUP BY 
+	employee_id
+ORDER BY
+	total_sales;
+
+	
+
+
+/* Grupowanie danych - HAVING */	
+
+
 
 /* Instrukcja SELECT CASE */
 
