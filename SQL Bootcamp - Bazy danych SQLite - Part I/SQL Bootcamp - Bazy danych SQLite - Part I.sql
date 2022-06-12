@@ -5,36 +5,52 @@
 
 /* Instrukcja SELECT */
 
+/* --- */
 SELECT 20;
 
+/* --- */
 SELECT 20 + 40;
 
+/* --- */
 SELECT 20 - 40;
 
+/* --- */
 SELECT 20 * 40;
 
+/* --- */
 SELECT 20 / 5;
 
+/* --- */
 SELECT 21 / 5.0; 
 
+/* --- */
 SELECT 20 % 5;
 
+/* --- */
 SELECT 21 % 5;  
 
+/* --- */
 SELECT 'python'; 
 
+/* --- */
 SELECT 'python', 'java', 'c++'; 
 
+/* --- */
 SELECT 'Sci' || ' & ', 'Tech';
 
+/* --- */
 SELECT True, False;
 
+/* --- */
 SELECT NULL;
 
+/* --- */
 SELECT (45.0 / 42.0) - 1;
 
+/* --- */
 SELECT (45.0 / 42.0) - 1 AS daily_return;
 
+/* --- */
 SELECT (45.0 / 42.0) - 1 AS daily_return,
 		'GPW' AS stock_market;
 
@@ -43,11 +59,13 @@ SELECT (45.0 / 42.0) - 1 AS daily_return,
 
 /* Instrukcja SELECT ... FROM ... */
 
+/* --- */
 SELECT * 
 FROM 
 	Category;
 
-
+	
+/* --- */
 SELECT 
 	Id, 
 	CategoryName, 
@@ -55,7 +73,8 @@ SELECT
 FROM 
 	Category;
 
-
+	
+/* --- */
 SELECT 
 	CategoryName, 
 	Description 
@@ -63,6 +82,7 @@ FROM
 	Category;
 
 
+/* --- */
 SELECT 
 	CategoryName AS Category, 
 	Description 
@@ -70,11 +90,13 @@ FROM
 	Category;
 	
 
+/* --- */
 SELECT * 
 FROM 
 	Employee;
 
 
+/* --- */
 SELECT 
 	FirstName, 
 	LastName, 
@@ -88,6 +110,7 @@ FROM
 
 /* Instrukcja ORDER BY */
 
+/* --- */
 SELECT * 
 FROM 
 	Employee
@@ -95,6 +118,7 @@ ORDER BY
 	FirstName;
 
 	
+/* --- */	
 SELECT * 
 FROM 
 	Employee
@@ -102,6 +126,7 @@ ORDER BY
 	FirstName DESC;
 
 
+/* --- */
 SELECT * 
 FROM 
 	Employee
@@ -109,7 +134,8 @@ ORDER BY
 	Title, 
 	FirstName;
 
-	
+
+/* --- */	
 SELECT * 
 FROM 
 	Employee
@@ -118,6 +144,7 @@ ORDER BY
 	FirstName DESC;
 
 
+/* --- */
 SELECT 
 	Title,
 	FirstName,
@@ -129,27 +156,31 @@ ORDER BY
 	2 DESC;
 
 
+/* --- */
 SELECT * 
 FROM 
 	Product
 ORDER BY 
 	UnitPrice;
 	
-
+	
+/* --- */
 SELECT * 
 FROM 
 	Product
 ORDER BY 
 	UnitPrice DESC;
 	
-	
+
+/* --- */
 SELECT * 
 FROM 
 	Customer
 ORDER BY 
 	Fax;
 
-	
+
+/* --- */
 SELECT 
 	CompanyName,
 	ContactName,
@@ -159,7 +190,8 @@ FROM
 ORDER BY 
 	Fax;
 	
-	
+
+/* --- */	
 SELECT 
 	CompanyName,
 	ContactName,
@@ -169,7 +201,8 @@ FROM
 ORDER BY 
 	Fax DESC;
 	
-		
+
+/* --- */	
 SELECT 
 	CompanyName,
 	ContactName,
@@ -180,6 +213,7 @@ ORDER BY
 	Fax DESC NULLS FIRST;
 
 
+/* --- */
 SELECT 
 	CompanyName,
 	ContactName,
@@ -194,6 +228,7 @@ ORDER BY
 
 /* Instrukcja LIMIT + OFFSET */
 
+/* --- */
 SELECT 
 	ProductName,
 	UnitPrice
@@ -203,7 +238,8 @@ ORDER BY
 	UnitPrice
 LIMIT 10;
 	
-	
+
+/* --- */	
 SELECT 
 	ProductName,
 	UnitPrice
@@ -214,6 +250,7 @@ ORDER BY
 LIMIT 10;
 	
 
+/* --- */
 SELECT 
 	ProductName,
 	UnitPrice
@@ -224,6 +261,7 @@ ORDER BY
 LIMIT 1;
 
 
+/* --- */
 SELECT 
 	ProductName,
 	UnitPrice
@@ -233,7 +271,8 @@ ORDER BY
 	UnitPrice
 LIMIT 1;
 	
-
+	
+/* --- */
 SELECT 
 	ProductName,
 	UnitPrice
@@ -243,7 +282,8 @@ ORDER BY
 	UnitPrice
 LIMIT 5 OFFSET 3;
 	
-	
+
+/* --- */
 SELECT 
 	ProductName,
 	UnitPrice
@@ -258,12 +298,14 @@ LIMIT 1 OFFSET 4;
 	
 /* Instrukcja SELECT DISTINCT */
 
+/* --- */
 SELECT DISTINCT
 	Country
 FROM 
 	Customer;
 
 
+/* --- */
 SELECT DISTINCT
 	Country
 FROM 
@@ -271,7 +313,8 @@ FROM
 ORDER BY 
 	Country;
 
-
+	
+/* --- */
 SELECT DISTINCT
 	Country,
 	City
@@ -279,6 +322,7 @@ FROM
 	Customer;
 
 	
+/* --- */
 SELECT DISTINCT
 	Country,
 	City
@@ -292,6 +336,7 @@ ORDER BY
 	
 /* Instrukcja WHERE */
 
+/* --- */
 SELECT *
 FROM 
 	Customer
@@ -299,20 +344,23 @@ WHERE
 	Country == 'Poland';
 
 
+/* --- */
 SELECT *
 FROM 
 	Customer
 WHERE
 	Country == 'Poland';
 	
-	
+
+/* --- */	
 SELECT *
 FROM 
 	Customer
 WHERE
 	Country == 'USA';
 
-	
+
+/* --- */
 SELECT *
 FROM 
 	Customer
@@ -320,6 +368,7 @@ WHERE
 	Region == 'Scandinavia';
 
 
+/* --- */
 SELECT 
 	ProductName, 
 	UnitPrice
@@ -328,7 +377,8 @@ FROM
 WHERE
 	UnitPrice > 40;
 
-	
+
+/* --- */
 SELECT 
 	ProductName, 
 	UnitPrice
@@ -340,6 +390,7 @@ ORDER BY
 	UnitPrice;
 
 	
+/* --- */
 SELECT 
 	ProductName, 
 	UnitPrice,
@@ -349,7 +400,8 @@ FROM
 WHERE
 	UnitsInStock = 0;
 
-	
+
+/* --- */
 SELECT 
 	ProductName, 
 	UnitPrice
@@ -358,7 +410,8 @@ FROM
 WHERE
 	UnitsInStock = 0;
 	
-	
+
+/* --- */	
 SELECT 
 	ProductName, 
 	UnitPrice
@@ -367,7 +420,8 @@ FROM
 WHERE
 	UnitsInStock != 0;
 
-	
+
+/* --- */
 SELECT 
 	ProductName, 
 	UnitPrice
@@ -376,14 +430,16 @@ FROM
 WHERE
 	UnitsInStock <> 0;
 	
-
+	
+/* --- */
 SELECT *
 FROM 
 	Customer
 WHERE
 	Country == 'UK' AND City =='London';
 	
-	
+
+/* --- */
 SELECT *
 FROM 
 	Customer
@@ -391,6 +447,7 @@ WHERE
 	Country == 'UK' OR Country =='Italy';
 	
 	
+/* --- */
 SELECT *
 FROM 
 	Customer
@@ -398,13 +455,15 @@ WHERE
 	Country == 'UK' OR Country =='Italy' OR Country == 'Poland';
 	
 
+/* --- */
 SELECT *
 FROM 
 	Customer
 WHERE
 	Country IN ('UK', 'Italy', 'Poland');
 
-	
+
+/* --- */
 SELECT *
 FROM 
 	Customer
@@ -412,6 +471,7 @@ WHERE
 	Country NOT IN ('UK', 'Italy', 'Poland');
 	
 	
+/* --- */
 SELECT *
 FROM 
 	Customer
@@ -419,6 +479,7 @@ WHERE
 	Country NOT IN ('UK', 'Italy', 'Poland');
 	
 	
+/* --- */
 SELECT
 	ProductName, 
 	UnitPrice
@@ -427,7 +488,8 @@ FROM
 WHERE
 	UnitPrice >= 15 AND UnitPrice <=20;
 	
-	
+
+/* --- */
 SELECT
 	ProductName, 
 	UnitPrice
@@ -437,6 +499,7 @@ WHERE
 	UnitPrice BETWEEN 15 AND 20;
 	
 
+/* --- */
 SELECT
 	ProductName, 
 	UnitPrice
@@ -445,7 +508,8 @@ FROM
 WHERE
 	UnitPrice NOT BETWEEN 15 AND 20;
 	
-	
+
+/* --- */
 SELECT
 	CompanyName, 
 	Fax
@@ -454,7 +518,8 @@ FROM
 WHERE
 	Fax IS NULL;	
 	
-	
+
+/* --- */
 SELECT
 	CompanyName, 
 	Fax
@@ -463,7 +528,8 @@ FROM
 WHERE
 	Fax IS NOT NULL;	
 	
-	
+
+/* --- */
 SELECT
 	CompanyName, 
 	ContactName,
@@ -473,7 +539,8 @@ FROM
 WHERE
 	CompanyName == 'Bon app';	
 
-	
+
+/* --- */
 SELECT
 	CompanyName, 
 	ContactName,
@@ -483,7 +550,8 @@ FROM
 WHERE
 	CompanyName == 'bon app';	
 	
-	
+
+/* --- */
 SELECT
 	CompanyName, 
 	ContactName,
@@ -493,7 +561,8 @@ FROM
 WHERE
 	CompanyName LIKE  'B%';	
 	
-	
+
+/* --- */
 SELECT
 	CompanyName, 
 	ContactName,
@@ -503,7 +572,8 @@ FROM
 WHERE
 	CompanyName LIKE  'b%';	
 	
-	
+
+/* --- */
 SELECT
 	CompanyName, 
 	ContactName,
@@ -513,7 +583,8 @@ FROM
 WHERE
 	CompanyName LIKE  'Bl%';
 	
-	
+
+/* --- */
 SELECT
 	CompanyName, 
 	ContactName,
@@ -524,6 +595,7 @@ WHERE
 	CompanyName LIKE  '%en';	
 	
 	
+/* --- */
 SELECT
 	CompanyName, 
 	ContactName,
@@ -533,7 +605,8 @@ FROM
 WHERE
 	CompanyName NOT LIKE  '%en';	
 	
-	
+
+/* --- */
 SELECT
 	CompanyName, 
 	ContactName,
@@ -544,6 +617,7 @@ WHERE
 	CompanyName LIKE  '%en' OR CompanyName LIKE '%es';	
 	
 	
+/* --- */
 SELECT
 	CompanyName, 
 	ContactName,
@@ -554,6 +628,7 @@ WHERE
 	CompanyName LIKE  '%co%';
 	
 	
+/* --- */
 SELECT
 	CompanyName, 
 	ContactName,
@@ -564,6 +639,7 @@ WHERE
 	Country LIKE  '___';
 	
 	
+/* --- */
 SELECT
 	CompanyName, 
 	ContactName,
@@ -574,6 +650,7 @@ WHERE
 	Country LIKE  '__';
 	
 	
+/* --- */
 SELECT
 	CompanyName, 
 	ContactName,
@@ -584,6 +661,7 @@ WHERE
 	ContactName LIKE  'J__n%';
 
 
+/* --- */
 SELECT
 	CompanyName, 
 	ContactName,
@@ -594,6 +672,7 @@ WHERE
 	ContactName GLOB  'An*';
 
 
+/* --- */
 SELECT
 	CompanyName, 
 	ContactName,
@@ -603,7 +682,8 @@ FROM
 WHERE
 	ContactName GLOB 'an*';	
 
-	
+
+/* --- */	
 SELECT
 	CompanyName, 
 	ContactName,
@@ -614,6 +694,7 @@ WHERE
 	ContactName GLOB 'An? *';
 	
 
+/* --- */
 SELECT
 	CompanyName, 
 	ContactName,
@@ -624,6 +705,7 @@ WHERE
 	CompanyName GLOB '[A-D]*';
 	
 	
+/* --- */
 SELECT
 	CompanyName, 
 	ContactName,
@@ -638,60 +720,70 @@ WHERE
 	
 /* Wbudowane funkcje */
 	
+/* --- */
 SELECT 
 	COUNT(*)
 FROM 
 	Product;
 
 
+/* --- */
 SELECT 
 	COUNT(1)
 FROM 
 	Product;
 	
 	
+/* --- */
 SELECT 
 	COUNT(1) AS TotalRows
 FROM 
 	Product;
 
 
+/* --- */
 SELECT 
 	COUNT(DISTINCT SupplierId) AS NumOfSuppliers
 FROM 
 	Product;
 	
 	
+/* --- */
 SELECT 
 	COUNT(Fax)
 FROM 
 	Customer;
 	
 	
+/* --- */
 SELECT 
 	SUM(UnitPrice) AS TotalSum
 FROM 
 	Product;
 	
 	
+/* --- */
 SELECT 
 	AVG(UnitPrice) AS AvgPrice
 FROM 
 	Product;
 	
 	
+/* --- */
 SELECT 
 	MIN(UnitPrice) AS MinPrice
 FROM 
 	Product;
 	
 	
+/* --- */
 SELECT 
 	MAX(UnitPrice) AS MaxPrice
 FROM 
 	Product;
 
-	
+
+/* --- */	
 SELECT 
 	UPPER(CategoryName) AS CategoryName, 
 	Description
@@ -699,6 +791,7 @@ FROM
 	Category;
 
 
+/* --- */
 SELECT 
 	UPPER(CategoryName) AS CategoryName, 
 	Description
@@ -706,6 +799,7 @@ FROM
 	Category;
 
 	
+/* --- */
 SELECT 
 	CategoryName,
 	LENGTH(CategoryName) AS LenCategoryName, 
@@ -714,14 +808,19 @@ FROM
 	Category;
 	
 
+/* --- */
 SELECT TYPEOF(3);
 
+/* --- */
 SELECT TYPEOF(3.5);
 
+/* --- */
 SELECT TYPEOF('PYTHON');
 
+/* --- */
 SELECT TYPEOF(null);
 
+/* --- */
 SELECT 
 	CategoryName,
 	TYPEOF(CategoryName) AS TypeCategoryName, 
@@ -734,6 +833,7 @@ FROM
 	
 /* Grupowanie danych - GROUP BY */	
 
+/* --- */
 CREATE TABLE website.sales_012021 
 (
 	id				INTEGER PRIMARY KEY,
@@ -754,11 +854,13 @@ VALUES
 (431, 32.00);
 
 
+/* --- */
 SELECT *
 FROM 
 	website.sales_012021;
 
 	
+/* --- */
 SELECT 
 	employee_id
 FROM 
@@ -767,6 +869,7 @@ GROUP BY
 	employee_id;
 	
 	
+/* --- */
 SELECT 
 	employee_id, 
 	SUM(amount) AS total_sales
@@ -776,6 +879,7 @@ GROUP BY
 	employee_id;
 
 
+/* --- */
 SELECT 
 	employee_id, 
 	SUM(amount) AS total_sales,
@@ -787,6 +891,7 @@ GROUP BY
 	employee_id;
 
 
+/* --- */
 SELECT 
 	employee_id, 
 	SUM(amount) AS total_sales,
@@ -800,6 +905,7 @@ GROUP BY
 	employee_id;
 
 
+/* --- */
 SELECT 
 	employee_id, 
 	SUM(amount) AS total_sales,
@@ -819,8 +925,77 @@ ORDER BY
 
 /* Grupowanie danych - HAVING */	
 
+/* --- */
+SELECT 
+	employee_id, 
+	SUM(amount) AS total_sales
+FROM 
+	website.sales_012021
+WHERE
+	employee_id != 431
+GROUP BY 
+	employee_id
+HAVING 
+	total_sales > 50.0
+ORDER BY
+	total_sales DESC;
+
+	
+/* --- */
+SELECT
+	OrderId, 
+	SUM(UnitPrice * Quantity * (1-Discount)) AS TotalSale
+FROM 
+	OrderDetail
+GROUP BY 
+	OrderId
+ORDER BY
+	TotalSale DESC;
+	
+
+/* --- */
+SELECT
+	ShipCountry, 
+	COUNT(ShipCountry) AS NumOfRows
+FROM 
+	"Order"
+GROUP BY 
+	ShipCountry
+ORDER BY
+	NumOfRows DESC;
 
 
+/* --- */
+SELECT
+	ShipCountry, 
+	COUNT(ShipCountry) AS NumOfRows,
+	AVG(Freight) AS AvgFreight
+FROM 
+	"Order"
+GROUP BY 
+	ShipCountry
+ORDER BY
+	NumOfRows DESC;
+	
+	
+/* --- */
+SELECT
+	ShipCountry, 
+	COUNT(ShipCountry) AS NumOfRows,
+	AVG(Freight) AS AvgFreight,
+	MIN(Freight) AS MinFreight,
+	MAX(Freight) AS MaxFreight
+FROM 
+	"Order"
+GROUP BY 
+	ShipCountry
+HAVING
+	MaxFreight > 300
+ORDER BY
+	NumOfRows DESC;
+	
+	
+	
 /* Instrukcja SELECT CASE */
 
 
