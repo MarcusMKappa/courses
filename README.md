@@ -40,7 +40,7 @@ This tutorial has been prepared for those who seek to learn the basics and vario
 &nbsp;
 &nbsp;
 
-### Visualize data in Python using the Seaborn and Plotly libraries!
+### Visualize data in Python using the Seaborn and Plotly libraries
 #### Course Description
 The course is divided into two parts. The first focuses on statistical data visualization using the Seaborn library. This is a must-have part for those who want to work with data analysis, machine learning or data science. The second part presents the use of the Plotly library to generate fantastic interactive graphs that can be used in both data science and web application development. [Full training information.](https://www.udemy.com/course/wizualizacje-danych-python/)
 &nbsp;
