@@ -1198,17 +1198,109 @@ ORDER BY
 	
 /* Połączenie typy INNER JOIN */
 
+/* --- */
+SELECT 
+	t1.id,
+	t1.first_name,
+	t1.last_name,
+	t1.email,
+	t2.group_name
+FROM user AS t1
+INNER JOIN user_group AS t2 ON t1.user_group_id = t2.id;
+
+
+
 
 /* Połączenie typy SELF JOIN */
+
+/* --- */
+SELECT 
+	t1.quarter || ' - ' || t2.quarter AS period,
+	t1.revenue AS revenue_Q1,
+	t2.revenue AS revenue_Q2,
+	(t2.revenue - t1.revenue) AS quarter_change,
+	(t2.revenue - t1.revenue)/t1.revenue AS pct_change
+FROM sales AS t1
+JOIN sales AS t2 ON t1.id = t2.id - 1;
+
+
 
 
 /* Łączenie tabel UNION */
 
+/* --- */
+SELECT * FROM sales_01_2021
+UNION
+SELECT * FROM sales_02_2021;
+
+
+/* --- */
+SELECT product_name FROM sales_01_2021
+UNION
+SELECT product_name FROM sales_02_2021;
+
+
+
 
 /* Łączenie tabel UNION ALL */
+
+/* --- */
+SELECT * FROM sales_01_2021
+UNION ALL
+SELECT * FROM sales_02_2021;
+
+
+/* --- */
+SELECT * FROM sales_01_2021
+UNION ALL
+SELECT * FROM sales_02_2021
+ORDER BY price;
+
+
+/* --- */
+SELECT * FROM sales_01_2021
+UNION ALL
+SELECT * FROM sales_02_2021
+WHERE PRICE > 40.0
+ORDER BY price;
+
+
 
 
 /* Łączenie tabel EXCEPT */
 
+/* --- */
+SELECT * FROM sales_01_2021
+EXCEPT
+SELECT * FROM sales_02_2021;
+
+
+/* --- */
+SELECT product_name FROM sales_01_2021
+EXCEPT
+SELECT product_name FROM sales_02_2021;
+
+
+/* --- */
+SELECT product_name FROM sales_02_2021
+EXCEPT
+SELECT product_name FROM sales_01_2021;
+
+
+
 
 /* Łączenie tabel INTERSECT */
+
+/* --- */
+SELECT * FROM sales_02_2021
+INTERSECT
+SELECT * FROM sales_01_2021;
+
+
+/* --- */
+SELECT product_name FROM sales_02_2021
+INTERSECT
+SELECT product_name FROM sales_01_2021;
+
+
+
