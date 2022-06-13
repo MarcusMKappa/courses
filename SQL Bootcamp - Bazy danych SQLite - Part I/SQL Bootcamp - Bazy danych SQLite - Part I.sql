@@ -998,19 +998,204 @@ ORDER BY
 	
 /* Instrukcja SELECT CASE */
 
+/* --- */
+SELECT
+	ProductName,
+	UnitPrice,
+	CASE
+		WHEN UnitPrice < 28.0 THEN 'low'
+		ELSE 'high'
+	END AS PriceLevel
+FROM 
+	Product;
 
+
+/* --- */
+SELECT
+	CompanyName,
+	ContactName,
+	ContactTitle,
+	CASE
+		WHEN ContactTitle == 'Owner' THEN 'Owner'
+		ELSE 'Other'
+	END AS IsOwner
+FROM 
+	Customer;
+	
+
+/* --- */
+SELECT
+	ProductName,
+	UnitPrice,
+	CASE
+		WHEN UnitPrice < 10.0 THEN 'low'
+		WHEN UnitPrice >= 10.0 AND UnitPrice <= 30.0 THEN 'medium'
+		ELSE 'high'
+	END AS PriceLevel
+FROM 
+	Product;
+	
+
+/* --- */
+SELECT
+	ProductName,
+	UnitPrice,
+	CASE
+		WHEN UnitPrice < 10.0 THEN 'low'
+		WHEN UnitPrice BETWEEN 10.0 AND 30.0 THEN 'medium'
+		ELSE 'high'
+	END AS PriceLevel
+FROM 
+	Product;
+
+
+/* --- */
+SELECT
+	ShipRegion,
+	CASE
+		WHEN ShipRegion LIKE '%Europe' THEN 'Europe'
+		WHEN ShipRegion LIKE '%America' THEN 'America'
+		WHEN ShipRegion LIKE 'Scandinavia' THEN 'Europe'
+		WHEN ShipRegion LIKE 'British Isles' THEN 'Europe'
+	END AS Continent
+FROM 
+	"Order";
+	
+	
+	
+	
 /* Podzapytania */
 
+/* --- */
+SELECT *
+FROM OrderDetail
+WHERE ProductId IN
+	(SELECT Id
+	FROM Product
+	WHERE UnitsInStock > 0);
 
-/* Łączenie tabel */
 
+/* --- */
+SELECT *
+FROM "Order"
+WHERE CustomerId IN
+	(SELECT Id
+	FROM Customer
+	WHERE Country LIKE 'U%');
 
+	
+	
+	
 /* Połączenie typy CROSS JOIN */
+
+/* --- */
+SELECT * 
+FROM category
+CROSS JOIN calendar;
+
+
+/* --- */
+SELECT 
+	category_name,
+	quarter
+FROM category
+CROSS JOIN calendar;
+
+
+/* --- */
+SELECT 
+	category_name,
+	quarter
+FROM category
+CROSS JOIN calendar
+ORDER BY quarter;
+
+
+/* --- */
+SELECT 
+	category_name,
+	quarter
+FROM category
+JOIN calendar
+ORDER BY quarter;
+
+
+/* --- */
+SELECT 
+	category_name,
+	quarter
+FROM 
+	category,
+	calendar
+ORDER BY quarter;
+
+
+/* --- */
+SELECT 
+	category_name,
+	quarter
+FROM category
+JOIN calendar
+WHERE quarter == 'Q2'
+ORDER BY quarter;
+
+
+
+/* --- */
+CREATE TABLE report AS
+SELECT 
+	category_name,
+	quarter
+FROM category
+JOIN calendar
+WHERE quarter == 'Q2'
+ORDER BY quarter;
+
+SELECT * FROM report;
+
+
 
 
 /* Połączenie typy LEFT JOIN */
 
+/* --- */
+SELECT 
+	user.id,
+	first_name,
+	last_name,
+	email,
+	group_name
+FROM user
+LEFT JOIN user_group ON user.user_group_id = user_group.id;
 
+
+/* --- */
+SELECT 
+	t1.id,
+	t1.first_name,
+	t1.last_name,
+	t1.email,
+	t2.group_name AS sector
+FROM user AS t1
+LEFT JOIN user_group AS t2 ON t1.user_group_id = t2.id;
+
+
+/* --- */
+SELECT 
+	t1.id,
+	t1.first_name,
+	t1.last_name,
+	t1.email,
+	t2.group_name AS sector
+FROM user AS t1
+LEFT JOIN user_group AS t2 ON t1.user_group_id = t2.id
+ORDER BY 
+	t1.first_name,
+	t1.last_name;
+
+	
+	
+	
 /* Połączenie typy INNER JOIN */
 
 
