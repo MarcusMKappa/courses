@@ -17,7 +17,7 @@
 
 
 ### 5. Fundamentals of Probability and Statistics: SciPy
-- 5.1. Introduction
+- [5.1. Introduction](https://github.com/krakowiakpawel9/data-science-bootcamp/blob/master/05_p_stwo_statystyka/01_p_stwo_statystyka.ipynb)
 
 
 ### 6. Machine Learning: Scikit-learn
