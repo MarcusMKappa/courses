@@ -6,7 +6,6 @@ This course starts with the basics of Tableau. You'll learn how to navigate the 
 &nbsp;
 ##### [Exercises and case studies I did during the training.](https://public.tableau.com/app/profile/kirill.eremenko)
 
-
 &nbsp;
 &nbsp;
 
