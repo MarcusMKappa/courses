@@ -4,4 +4,3 @@
 
 &nbsp;
 &nbsp;
-![UC-ba4d3756-0e8b-4820-bfab-7bc4979764f6](https://user-images.githubusercontent.com/106902757/173358438-e36f3968-e7b9-4b38-a718-634e06dc2362.jpg)
