@@ -59,3 +59,21 @@ NumPy numerical computing libraries. Fundamentals of linear algebra in Python la
 
 &nbsp;
 &nbsp;
+
+### [L1-DS] KNIME Analytics Platform for Data Scientists: Basics
+#### Course Description
+This course is designed for those who are just getting started on their data science journey with KNIME Analytics Platform. It starts with a detailed introduction of KNIME Analytics Platform - from downloading it through to navigating the workbench. 
+
+#### Course content:
+- Overview of KNIME Analytics Platform & Data Access
+- Data Cleaning & Visualization
+- Bringing Things Together
+- Machine Learning & Data Export
+
+The course then introduces you to KNIME Analytics Platform covering the whole data science cycle from data import, manipulation, aggregation, visualization, model training, and deployment. [Full training information.](https://www.knime.com/knime-self-paced-courses)
+&nbsp;
+##### [Exercises and case studies I did during the training.](https://hub.knime.com/knime/spaces/Education/latest/Self-Paced%20Courses/L1-DS%20KNIME%20Analytics%20Platform%20for%20Data%20Scientists%20-%20Basics/Solutions~6Mw2fuXbMWe6hP5p/)
+
+
+&nbsp;
+&nbsp;
