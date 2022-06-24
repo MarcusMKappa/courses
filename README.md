@@ -54,7 +54,7 @@ The course is divided into two parts. The first focuses on statistical data visu
 #### Course Description
 NumPy numerical computing libraries. Fundamentals of linear algebra in Python language. Data analysis in Pandas library. Data visualization in libraries: matplotlib, seaborn, plotly. Building interactive dashboards - dash, plotly. Basic probability and statistics. Basic machine learning with scikit-learn library. Building classification and regression models. Linear regression. Polynomial regression. Logistic regression. k-nearest neighbor algorithm. Decision tree algorithm. Basics of deep learning with Tensorflow and Keras libraries. Building a neural network with Keras package. Use of Tensorflow Hub and transfer learning. Computer Vision basics with OpenCV library. [Full training information.](https://www.udemy.com/course/data-science-bootcamp-python/)
 &nbsp;
-##### [Exercises and case studies I did during the training.](https://github.com/MarcusMKappa/courses/tree/main/Data%20Science%20Bootcamp%20in%20Python%20-%20from%20A%20to%20Z)
+##### [Exercises and case studies I did during the training.](https://github.com/krakowiakpawel9/data-science-bootcamp)
 
 
 &nbsp;
