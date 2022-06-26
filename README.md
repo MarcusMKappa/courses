@@ -78,4 +78,4 @@ This course builds on the [L1-DS] KNIME Analytics Platform for Data Scientist: B
 - How Date&Time integrations work
 - Get a taste for ensemble models, parameter optimization and cross validation.
 
-##### [Exercises and case studies I did during the training.](https://hub.knime.com/knime/spaces/Education/latest/Self-Paced%20Courses/L1-DS%20KNIME%20Analytics%20Platform%20for%20Data%20Scientists%20-%20Basics/Solutions~6Mw2fuXbMWe6hP5p/)
+##### [Exercises and case studies I did during the training.](https://hub.knime.com/knime/spaces/Education/latest/Self-Paced%20Courses/L2-DS%20KNIME%20Analytics%20Platform%20for%20Data%20Scientists%20-%20Advanced/Solutions~i-vTvihTRlTmXAJb/)
