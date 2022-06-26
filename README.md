@@ -52,7 +52,7 @@ NumPy numerical computing libraries. Fundamentals of linear algebra in Python la
 
 ### [L1-DS] KNIME Analytics Platform for Data Scientists: Basics
 #### Course Description
-This course is designed for those who are just getting started on their data science journey with KNIME Analytics Platform. It starts with a detailed introduction of KNIME Analytics Platform - from downloading it through to navigating the workbench. 
+This course is designed for those who are just getting started on their data science journey with KNIME Analytics Platform. It starts with a detailed introduction of KNIME Analytics Platform - from downloading it through to navigating the workbench. The course then introduces you to KNIME Analytics Platform covering the whole data science cycle from data import, manipulation, aggregation, visualization, model training, and deployment. [Full training information.](https://www.knime.com/knime-self-paced-courses)
 
 #### Course content:
 - Overview of KNIME Analytics Platform & Data Access
@@ -60,10 +60,22 @@ This course is designed for those who are just getting started on their data sci
 - Bringing Things Together
 - Machine Learning & Data Export
 
-The course then introduces you to KNIME Analytics Platform covering the whole data science cycle from data import, manipulation, aggregation, visualization, model training, and deployment. [Full training information.](https://www.knime.com/knime-self-paced-courses)
-&nbsp;
 ##### [Exercises and case studies I did during the training.](https://hub.knime.com/knime/spaces/Education/latest/Self-Paced%20Courses/L1-DS%20KNIME%20Analytics%20Platform%20for%20Data%20Scientists%20-%20Basics/Solutions~6Mw2fuXbMWe6hP5p/)
 
 
 &nbsp;
 &nbsp;
+
+
+### [L2-DS] KNIME Analytics Platform for Data Scientists: Advanced
+#### Course Description
+This course builds on the [L1-DS] KNIME Analytics Platform for Data Scientist: Basics course by introducing advanced data science concepts. Learn all about flow variables, different workflow controls such as loops, switches, and error handling. Find out how to automatically find the best parameter settings for your machine learning model, see how Date&Time integrations work, and get a taste for ensemble models, parameter optimization, and cross validation. [Full training information.](https://www.knime.com/knime-self-paced-courses)
+
+#### Course content:
+- Flow variables 
+- Different workflow controls such as loops, switches, and error handling
+- Find out how to automatically find the best parameter settings for your machine learning model
+- How Date&Time integrations work
+- Get a taste for ensemble models, parameter optimization and cross validation.
+
+##### [Exercises and case studies I did during the training.](https://hub.knime.com/knime/spaces/Education/latest/Self-Paced%20Courses/L1-DS%20KNIME%20Analytics%20Platform%20for%20Data%20Scientists%20-%20Basics/Solutions~6Mw2fuXbMWe6hP5p/)
